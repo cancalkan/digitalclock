@@ -1,34 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-*{
+
+* {
     padding: 0;
-    margin: 0 ;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: url("./images/geran-de-klerk-WJkc3xZjSXw-unsplash.jpg");
 }
-.main{
+
+.main {
     background: #ccc;
     width: 400px;
-    margin:100px auto;
+    margin: 100px auto;
     height: 175px;
     position: relative;
     padding: 30px;
 }
-.badge{
-    width: 96px ;
+
+.badge {
+    width: 96px;
     background: #e66357;
     color: white;
-    padding: 5px 10px ;
-    font-family: sans-serif ;
+    padding: 5px 10px;
+    font-family: sans-serif;
     font-weight: bold;
     position: absolute;
     top: -15px;
     left: 40%;
 
 }
-.clock{
+
+@media screen and (max-height:540px) {
+    .main {
+        height: 102px;
+        padding: 10px;
+    }
+    
+}
+
+.clock {
     background: #ebebeb;
     text-align: center;
     font-size: 55px;
@@ -39,7 +51,7 @@ body{
 }
 
 
-.social-menu p{
+.social-menu p {
     text-align: center;
     padding-bottom: 40px;
     color: white;
@@ -47,44 +59,61 @@ body{
     font-weight: bold;
 
 }
-@media screen and (max-width:600px){
-   .social-menu p{
-       margin-top: -55px;
-   }
+@media screen and (max-height:540px) {
+    .social-menu p {
+        font-size:25px;
+        padding-left: 5px;
+        padding-right:5px;
+    
+    }
 }
 
-.social-menu ul{
+
+
+@media screen and (max-width:600px) {
+    .social-menu p {
+        margin-top: -55px;
+    }
+}
+
+.social-menu ul {
     position: absolute;
     left: 50%;
     padding: 0 px;
-    margin: 15px ;
+    margin: 15px;
     transform: translate(-50%, -50%);
     display: flex;
 }
-.social-menu ul li{
+
+.social-menu ul li {
     list-style: none;
-    margin:0 5px;
-  }
-  @media screen and (max-width:370px){
-      .social-menu ul li{
-          margin: 0 1px;
-      }
-  }
-  @media screen and (max-width:410px){
-    .social-menu ul li:nth-child(5){
+    margin: 0 5px;
+}
+
+@media screen and (max-width:370px) {
+    .social-menu ul li {
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .social-menu ul li:nth-child(5) {
         display: none;
     }
 }
-@media screen and (max-width:370px){
 
-main{
-    background: #ccc;
-    width: 200px;
-    margin: 70px auto;
-    height: 175px;
-    position: relative;
-    padding: 10px;}
-    .clock{
+@media screen and (max-width:370px) {
+
+    main {
+        background: #ccc;
+        width: 200px;
+        margin: 70px auto;
+        height: 175px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .clock {
         background: #ebebeb;
         text-align: center;
         font-size: 40px;
@@ -98,47 +127,52 @@ main{
 
 
 
-  
-  .social-menu ul li .fa{
-     font-size:35px;
-     line-height: 70px;
-     transition: .6s;
-     color: #000;
-  
-    }
-    .social-menu ul li .fa:hover{ 
-        color: #fff;
-  
-    }
-  
-    .social-menu ul li a {
-        position: relative;
-        display:block;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background-color: #fff;
-        text-align: center;
-        transition: .6s;
-    }
-  .social-menu ul li a:hover {
-      transform:translate(0,-10px);
-  
-  }
 
-  .social-menu ul li:nth-child(1) a:hover{
-      background-color: #0077B5;
-  }
-  .social-menu ul li:nth-child(2) a:hover{
-      background-color: #cd201f;
-  }
-  .social-menu ul li:nth-child(3) a:hover{
-      background-color: #131418;
-  }
-  
-  .social-menu ul li:nth-child(4) a:hover{
-      background-color: black;
-  }
- .social-menu ul li:nth-child(5) a:hover{
+.social-menu ul li .fa {
+    font-size: 35px;
+    line-height: 70px;
+    transition: .6s;
+    color: #000;
+
+}
+
+.social-menu ul li .fa:hover {
+    color: #fff;
+
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+}
+
+.social-menu ul li a:hover {
+    transform: translate(0, -10px);
+
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #0077B5;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #cd201f;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #131418;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: black;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
     background-color: #eb4924;
 }
