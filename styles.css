@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("./images/geran-de-klerk-WJkc3xZjSXw-unsplash.jpg");
+    background: linear-gradient(to right, red,blue,white) ;
 }
 
 .main {
